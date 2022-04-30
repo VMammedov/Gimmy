@@ -5,38 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2ff0678d8a.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!--Header-->
+    <header id="gimmy_head">
 
-    <div id="w">
-        <header id="topbar" class="clearfix">
-            <div id="logo">Gimmy</div>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
 
-            <nav id="topnav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Admin Login</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" id="searchtoggl"><i class="fa fa-search fa-lg"></i></a></li>
-                </ul>
-            </nav>
-        </header>
+                <div class="navbar-header">
+                    <button class="navbar-toggler" data-toggle="open-navbar1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="#">
+                        Gimmy
+                    </a>
+                </div>
 
-        <div id="searchbar" class="clearfix">
-            <form id="searchform" method="get" action="searchpage.php">
-                <button type="submit" id="searchsubmit" class="fa fa-search fa-4x"></button>
-                <input type="search" name="s" id="s" placeholder="Keywords..." autocomplete="off">
+                <div class="navbar-menu" id="open-navbar1">
+                    <ul class="navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="navbar-dropdown">
+                            <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                                Categories <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown" id="my-dropdown-id">
+                                <li><a href="#">Actions</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="separator"></li>
+                                <li><a href="#">Seprated link</a></li>
+                                <li class="separator"></li>
+                                <li><a href="#">One more seprated link.</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                                Blog <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown" id="blog">
+                                <li><a href="#">Some category</a></li>
+                                <li><a href="#">Some another category</a></li>
+                                <li class="separator"></li>
+                                <li><a href="#">Seprated link</a></li>
+                                <li class="separator"></li>
+                                <li><a href="#">One more seprated link.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            </form>
-        </div>
-    </div>
+    </header>
 
     <!--Main-->
     <main>
@@ -57,7 +87,7 @@
     <footer>
 
     </footer>
-<script src="./js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
